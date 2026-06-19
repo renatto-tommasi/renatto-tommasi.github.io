@@ -15,3 +15,6 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# Stray local CV variant dropped in the wrong folder; keep out of the published site
+assets/plotly/*.pdf
