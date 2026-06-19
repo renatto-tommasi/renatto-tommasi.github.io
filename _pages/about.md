@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: AI &amp; Robotics Engineer · <a href='https://euroknows.com/'>European Knowledge Centre</a>, Budapest
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Budapest, Hungary</p>
+    <p>Open to roles in 🇲🇽 🇨🇭 🇪🇸 🇺🇸</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +21,17 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false # turn on if you decide to blog
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm an **AI &amp; Robotics Engineer** working at the intersection of perception and autonomy. My focus is **visual-inertial SLAM**, **multi-sensor perception**, and **sensor fusion**, with hands-on experience taking systems from research to **embedded edge deployment** on platforms like the NVIDIA Jetson. I build primarily on **ROS / ROS2**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I hold an M.Sc. in **Intelligent Field Robotics** ([Erasmus Mundus](https://en.wikipedia.org/wiki/Erasmus_Mundus), Universitat de Girona / University of Zagreb). A good part of my work has been in **space systems engineering** — including ESA projects, ISS payload work, and the HUNOR / Argonaut program — where reliability and tight resource budgets shape every design decision.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Right now I'm working toward **end-to-end Vision-Language-Action (VLA)** architectures for robot manipulation, and I supervise M.Sc. theses feeding into that effort. I care about systems that are not just accurate in a paper but robust on real hardware.
+
+Outside the lab I'm a triathlete; the training discipline tends to leak into how I approach engineering.
+
+Feel free to look through my [publications](/publications/) and [projects](/projects/), or get in touch via the links below.
