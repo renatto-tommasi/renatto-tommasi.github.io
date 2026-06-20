@@ -20,7 +20,7 @@ cv:
       - studyType: M.Sc. in Intelligent Field Robotics
         institution: Universitat de Girona / University of Zagreb
         area: Erasmus Mundus Joint Master — specialization in aerial & multi-robot systems
-        location: Girona, Spain / Zagreb, Croatia
+        location: Spain / Croatia
         start_date: "2023-08"
         end_date: "2025-06"
         highlights:
@@ -29,7 +29,7 @@ cv:
       - studyType: B.Sc. in Mechatronics Engineering
         institution: Tecnológico de Monterrey (ITESM) / Hochschule Mannheim
         area: DHIK international double-degree program
-        location: Guadalajara, Mexico / Mannheim, Germany
+        location: Mexico / Germany
         start_date: "2018-08"
         end_date: "2023-06"
         highlights:
