@@ -17,25 +17,23 @@ cv:
 
   sections:
     Education:
-      - institution: Universitat de Girona / University of Zagreb
+      - studyType: M.Sc. in Intelligent Field Robotics
+        institution: Universitat de Girona / University of Zagreb
+        area: Erasmus Mundus Joint Master — specialization in aerial & multi-robot systems
         location: Girona, Spain / Zagreb, Croatia
-        url: https://www.udg.edu/
-        area: Intelligent Field Robotics (Erasmus Mundus)
-        studyType: M.Sc.
         start_date: "2023-08"
         end_date: "2025-06"
         highlights:
-          - Erasmus Mundus Joint Masters Scholar; specialization in aerial robotics and multi-robot systems
           - "Thesis: enhancing indoor mapping and localization in specular-rich environments using deep learning and sensor fusion"
 
-      - institution: Tecnológico de Monterrey (ITESM) / Hochschule Mannheim
+      - studyType: B.Sc. in Mechatronics Engineering
+        institution: Tecnológico de Monterrey (ITESM) / Hochschule Mannheim
+        area: DHIK international double-degree program
         location: Guadalajara, Mexico / Mannheim, Germany
-        area: Mechatronics Engineering (DHIK Double Degree)
-        studyType: B.Sc.
         start_date: "2018-08"
         end_date: "2023-06"
         highlights:
-          - Double degree under the DHIK program (DHIK–DAAD scholarship), with a semester, internship, and thesis in Germany
+          - DHIK–DAAD scholarship; semester, internship, and thesis completed in Germany
           - "Thesis: force-torque sensing for the control of robotic drilling processes"
 
     Experience:
