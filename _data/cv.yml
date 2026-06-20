@@ -25,8 +25,18 @@ cv:
         start_date: "2023-08"
         end_date: "2025-06"
         highlights:
-          - Visual-inertial SLAM and multi-sensor perception
-          - Sensor fusion, state estimation, and embedded deployment
+          - Erasmus Mundus Joint Masters Scholar; specialization in aerial robotics and multi-robot systems
+          - "Thesis: enhancing indoor mapping and localization in specular-rich environments using deep learning and sensor fusion"
+
+      - institution: Tecnológico de Monterrey (ITESM) / Hochschule Mannheim
+        location: Guadalajara, Mexico / Mannheim, Germany
+        area: Mechatronics Engineering (DHIK Double Degree)
+        studyType: B.Sc.
+        start_date: "2018-08"
+        end_date: "2023-06"
+        highlights:
+          - Double degree under the DHIK program (DHIK–DAAD scholarship), with a semester, internship, and thesis in Germany
+          - "Thesis: force-torque sensing for the control of robotic drilling processes"
 
     Experience:
       - company: European Knowledge Centre (EKC)
@@ -35,23 +45,57 @@ cv:
         start_date: "2025-07"
         end_date: present
         summary: >
-          Perception and autonomy engineering across robotics and space systems,
-          including ESA projects and ISS payload work.
+          Perception and autonomy engineering across robotics and space systems.
         highlights:
-          - Visual-inertial SLAM and multi-camera perception pipelines
-          - Embedded edge deployment on NVIDIA Jetson (CUDA, Docker, ROS2)
+          - "Real-time multi-camera visual-inertial SLAM (C++17, ROS2): four fisheye cameras + IMU with factor-graph optimization (GTSAM) and SuperPoint features — 95% angular-drift reduction; core of the IntRob'26 paper"
           - Acting Systems Engineer on an ESA ISS-payload project (Phase B)
-          - AI researcher on the ESA HUNOR / Argonaut space-health program
-          - Supervising M.Sc. theses toward an end-to-end Vision-Language-Action architecture
+          - AI researcher on the ESA HUNOR / Argonaut space-health program (on-device physiological monitoring)
+          - "Geospatial foundation models: DINOv3-based stitching-artifact detector, ~50% less data-cleaning time (transitioned to production with Airbus)"
+          - Embedded edge deployment on NVIDIA Jetson (CUDA, Docker, ROS2)
+
+      - company: European Knowledge Centre (EKC)
+        position: Industrial Supervisor — M.Sc. Theses in Robotics
+        location: Budapest, Hungary
+        start_date: "2026-01"
+        end_date: present
+        highlights:
+          - Visual scene understanding & localization — bridging VLM semantics with metric localization for mobile robots
+          - Kinematic path planning and control for mobile bases in cluttered, dynamic environments
+
+      - company: European Knowledge Centre (EKC)
+        position: Intern — Robotic Perception & Localization
+        location: Budapest, Hungary
+        start_date: "2025-02"
+        end_date: "2025-06"
+        highlights:
+          - Prototyped multi-camera visual odometry (4 fisheye cameras, SuperPoint, GTSAM)
+          - Trained an SVM classifier to reject RGB-D reflection artifacts in specular environments
+
+      - company: Robert Bosch Power Tools GmbH
+        position: Intern & Bachelor Thesis — Robotic Automation
+        location: Germany
+        start_date: "2022-04"
+        end_date: "2023-03"
+        highlights:
+          - Built an automated UR16e test bench integrating kinematic control with sensor feedback
+          - Designed a multi-modal sensing system (force-torque, accelerometer, current) for real-time dynamic-force analysis
 
     Selected Skills:
-      - Perception & SLAM (visual-inertial, multi-camera), sensor fusion, state estimation
-      - ROS / ROS2, Docker, CI pipelines, embedded GPU compute (Jetson, CUDA)
-      - Python, C++ (and C# for industrial vision), PyTorch
-      - Event-camera (DVS) perception, ML for robotics
+      - label: Perception & SLAM
+        details: "Visual-inertial SLAM, multi-camera, event-camera (DVS), multi-object tracking, sensor fusion (camera, RGB-D, LiDAR, IMU), state estimation"
+      - label: Robotics & Deployment
+        details: "ROS / ROS2, Docker, CI pipelines, embedded GPU compute (NVIDIA Jetson, CUDA), nonlinear optimization (GTSAM)"
+      - label: Programming
+        details: "Python, C++ (≥17), C# (industrial vision), PyTorch, OpenCV, NumPy / SciPy"
+      - label: Research
+        details: "Deep-learning perception, event-camera pipelines, real-time embedded systems, scientific writing"
 
     Languages:
-      - Spanish — Native
-      - English — Fluent
-      - German — C1
-      - Hungarian — Learning
+      - name: Spanish
+        summary: Native
+      - name: English
+        summary: C1 (TOEFL iBT)
+      - name: German
+        summary: C1 (Goethe-Institut)
+      - name: Hungarian
+        summary: Learning
