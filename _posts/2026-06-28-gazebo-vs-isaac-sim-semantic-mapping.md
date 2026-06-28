@@ -10,7 +10,7 @@ giscus_comments: true
 related_posts: false
 ---
 
-I recently supervised a master's thesis on **vision-language models (VLMs)** and how to fold one into a perception pipeline *without* throwing away the geometry and probabilistic reasoning that semantic mapping is built on. The goal was deliberately conservative: use a VLM to **improve** semantic mapping, not to replace the map with a black box.
+I recently supervised a master's thesis on **vision-language models (VLMs)** and how to fold one into a perception pipeline _without_ throwing away the geometry and probabilistic reasoning that semantic mapping is built on. The goal was deliberately conservative: use a VLM to **improve** semantic mapping, not to replace the map with a black box.
 
 We staged the work so the student always had something running:
 
@@ -22,13 +22,13 @@ Conceptually, the pipeline worked. The map updated, objects were segmented, and 
 
 ## The wall: simulators don't look like the real world
 
-SAM 2 and the VLM were trained on **real images**. Our simulation ran in **Gazebo**, and Gazebo's surfaces — flat textures, weak lighting cues, low material fidelity — simply weren't *vivid* enough for SAM 2 to lock onto object boundaries. The segmentation step couldn't reliably crop objects out of the scene, and a language model is only as good as the crop you hand it. Garbage region in, vague label out.
+SAM 2 and the VLM were trained on **real images**. Our simulation ran in **Gazebo**, and Gazebo's surfaces — flat textures, weak lighting cues, low material fidelity — simply weren't _vivid_ enough for SAM 2 to lock onto object boundaries. The segmentation step couldn't reliably crop objects out of the scene, and a language model is only as good as the crop you hand it. Garbage region in, vague label out.
 
 So the bottleneck was never really the model or the pipeline architecture. **It was the simulator.** The domain gap between Gazebo's rendering and the real photographs these models were trained on was wide enough to starve the whole downstream stack of usable input.
 
 {% include figure.liquid loading="eager" path="assets/img/gazebo_environment.png" class="img-fluid rounded z-depth-1" zoomable=true caption="The scene as rendered in Gazebo. Great for physics and navigation — but the flat textures and lighting give models trained on real imagery very little to grab onto." %}
 
-That reframed the question. Instead of asking *"how do we make the VLM smarter?"*, the better question was *"how do we give it input that looks like what it was trained on?"*
+That reframed the question. Instead of asking _"how do we make the VLM smarter?"_, the better question was _"how do we give it input that looks like what it was trained on?"_
 
 ## Enter Isaac Sim
 
@@ -40,17 +40,19 @@ So this past weekend I set out to **port the robot to Isaac Sim**. That meant ta
 
 ## So when should you use which?
 
-The lesson here isn't "Isaac Sim is better." It's that **the right simulator depends on what your pipeline consumes.** If your perception is geometric — point clouds, depth, occupancy, fiducials — texture realism barely matters. If your perception is *learned on real images*, photorealism stops being a nice-to-have and becomes the thing that determines whether the pipeline works at all.
+The lesson here isn't "Isaac Sim is better." It's that **the right simulator depends on what your pipeline consumes.** If your perception is geometric — point clouds, depth, occupancy, fiducials — texture realism barely matters. If your perception is _learned on real images_, photorealism stops being a nice-to-have and becomes the thing that determines whether the pipeline works at all.
 
 ### Gazebo
 
 **Pros**
+
 - Lightweight, fast, runs comfortably on modest hardware (no RTX GPU required).
 - Mature, deeply integrated ROS/ROS2 tooling and a huge ecosystem of existing models and worlds.
 - Excellent for **trajectory planning, navigation, control, and geometry-based object detection**.
 - Fast iteration loop — quick to spin up and tweak.
 
 **Cons**
+
 - Rendering is far from photorealistic; textures and lighting are flat.
 - Large **sim-to-real gap for vision models trained on real images** (this is exactly what bit us).
 - Limited fidelity for camera-heavy perception research.
@@ -58,12 +60,14 @@ The lesson here isn't "Isaac Sim is better." It's that **the right simulator dep
 ### Isaac Sim
 
 **Pros**
+
 - **RTX ray-traced, physically based rendering** — lifelike materials, lighting, and reflections.
 - Dramatically narrows the domain gap for **models trained on real-world imagery** (SAM 2, VLMs, learned detectors).
 - Rich synthetic-data and domain-randomization tooling, plus strong sensor simulation.
 - ROS/ROS2 bridge so it slots into an existing stack.
 
 **Cons**
+
 - Heavyweight — needs a capable NVIDIA RTX GPU and more setup effort.
 - Steeper learning curve and a smaller community than Gazebo.
 - Slower to iterate; more resource-hungry for everyday navigation work.
