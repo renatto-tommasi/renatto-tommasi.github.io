@@ -1,13 +1,24 @@
 cv:
   name: Renatto Tommasi Hernández
-  label: AI & Robotics Engineer
+  label: Full Stack Robotics Engineer
   email: renatto.tommasi@gmail.com
   location: Budapest, Hungary
   image: ""
   summary: >
-    AI & Robotics Engineer specializing in visual-inertial SLAM, multi-sensor
-    perception, sensor fusion, and embedded edge deployment (ROS/ROS2, Jetson),
-    with applied experience in space systems and ESA projects.
+    Full Stack Robotics Engineer who takes autonomous mobile robots from raw sensor data
+    to a reliable state estimate on real hardware, in the field. Owns the perception and
+    localization stack of an autonomous ground vehicle in C++17 and Python (ROS 2): sensor
+    bringup and intrinsic/extrinsic calibration, multi-camera visual odometry and SLAM,
+    depth-image and point-cloud processing, free-space and obstacle estimation, and
+    multi-sensor fusion through factor-graph optimization (GTSAM) on SE(3), optimized for
+    NVIDIA Jetson edge hardware. Fluent in coordinate frames, rigid-body transforms
+    (SO(3)/SE(3)) and 3D geometry, and comfortable bisecting a stack across sensor drivers,
+    timing, networking, and geometric logic to find where reality and the math disagree.
+    Builds the validation infrastructure that proves it works: Isaac Sim digital twins for
+    simulation-first testing before every hardware deployment, large-scale ROS-bag
+    field-data collection and replay for repeatable metrics, and 3D visualization in
+    Foxglove and RViz to diagnose real-world failure modes. Hardware-native mechatronics
+    background, first-author SLAM publication, and a decade in competitive robotics.
 
   social_networks:
     - network: GitHub
@@ -17,48 +28,68 @@ cv:
 
   sections:
     Education:
-      - studyType: M.Sc. in Intelligent Field Robotics
+      - studyType: M.Sc. Intelligent Field Robotics Systems
         institution: Universitat de Girona / University of Zagreb
-        area: Erasmus Mundus Joint Master — specialization in aerial & multi-robot systems
+        area: Erasmus Mundus Joint Masters Scholar
         location: Spain / Croatia
         start_date: "2023-08"
-        end_date: "2025-06"
+        end_date: "2025-07"
         highlights:
-          - "Thesis: enhancing indoor mapping and localization in specular-rich environments using deep learning and sensor fusion"
+          - "**Relevant coursework:** Hands-on Localization (10.0/10), Hands-on Perception (9.6/10), Robot Sensing, Perception and Actuation (9.6/10), Hands-on Planning (9.4/10), Machine Learning (8.4/10), Probabilistic Robotics, Multiview Geometry"
+          - "**GPA:** 8.75/10 · **Thesis grade:** 9.1/10"
+          - "**Thesis:** Enhancing Indoor Mapping and Localization in Specular-Rich Environments using Deep Learning and Sensor Fusion"
 
-      - studyType: B.Sc. in Mechatronics Engineering
+      - studyType: B.Sc. Mechatronics Engineering
         institution: Tecnológico de Monterrey (ITESM) / Hochschule Mannheim
-        area: DHIK international double-degree program
+        area: DHIK international double-degree programme
         location: Mexico / Germany
         start_date: "2018-08"
         end_date: "2023-06"
         highlights:
-          - DHIK–DAAD scholarship; semester, internship, and thesis completed in Germany
-          - "Thesis: force-torque sensing for the control of robotic drilling processes"
+          - Double degree at Hochschule Mannheim (DHIK programme, 17 months of coursework, internship and thesis)
+          - ITESM Scholarship for Excellence in Leadership · DHIK–DAAD scholarship holder
+          - "**Relevant coursework:** Machine Vision & Autonomous Driving, Robotics, Industrial Robotics, Control Engineering, Signal & System Analysis, Mechatronics Design, Microcontrollers"
+          - "**GPA:** 89.04/100 · **Thesis grade:** 1.0 (German scale)"
+          - "**Thesis:** Application of a force-torque sensor for the control of robotic drilling processes"
 
     Experience:
+      - company: European Knowledge Centre (EKC)
+        position: Senior Robotics Engineer
+        location: Budapest, Hungary
+        start_date: "2026-04"
+        end_date: present
+        summary: >
+          End-to-end ownership of perception and state estimation on the ViroFighter
+          autonomous UGV.
+        highlights:
+          - "**ViroFighter Autonomous UGV — Perception & State Estimation:** own the real-time perception and localization stack (ROS 2, C++17, Python), from raw sensor drivers to the poses and free-space estimates consumed by planning and control. Cut angular drift 95% by fusing multi-camera visual odometry (four fisheye cameras, SuperPoint features), RGB-D point clouds and wheel odometry in a factor graph on SE(3) (GTSAM)"
+          - "**Sensor Integration & Edge Deployment:** bringup, intrinsic/extrinsic calibration and time synchronization of the wide-FOV fisheye and RGB-D suite; optimized and deployed the stack to NVIDIA Jetson (Isaac ROS) under real-time constraints"
+          - "**Field Data & Validation Tooling:** large-scale ROS-bag field-data collection and replay for metric-driven benchmarking, live logging to reproduce real-world failure modes, and 3D visualization of point clouds, trajectories and frames in Foxglove and RViz. Docker CI across the stack"
+          - "**ROS 2 Fleet Migration & Simulation-First Validation:** oversee the ROS 1 → ROS 2 migration of the robot fleet, and built the Isaac Sim environment used to develop and validate perception, localization and navigation before every hardware deployment"
+          - "**Applied Research Supervision:** supervise two industrial M.Sc. theses — vision-language models for semantic localization, and behaviour cloning with actor–critic refinement in Nav2 — merging into one end-to-end vision-language-action architecture on a real mobile robot"
+
+      - company: European Knowledge Centre (EKC)
+        position: ESA Payload Systems Engineer
+        location: Budapest, Hungary
+        start_date: "2026-04"
+        end_date: present
+        summary: >
+          Systems engineering for the prime contractor on an ESA ISS payload.
+        highlights:
+          - Systems Engineer for the Prime Contractor on an ESA ISS payload flying a point-of-care hematology analyser with minimal modification to the commercial device
+          - Lead the consortium's engineering effort with Airbus Defence and Space and report technical progress to ESA under ECSS standards toward PDR
+          - Own payload design and product assurance across a multidisciplinary team of software, electrical, mechanical and systems engineers
+
       - company: European Knowledge Centre (EKC)
         position: AI & Robotics Engineer
         location: Budapest, Hungary
         start_date: "2025-07"
-        end_date: present
-        summary: >
-          Perception and autonomy engineering across robotics and space systems.
+        end_date: "2026-04"
         highlights:
-          - "Real-time multi-camera visual-inertial SLAM (C++17, ROS2): four fisheye cameras + IMU with factor-graph optimization (GTSAM) and SuperPoint features — 95% angular-drift reduction; core of the IntRob'26 paper"
-          - Acting Systems Engineer on an ESA ISS-payload project (Phase B)
-          - AI researcher on the ESA HUNOR / Argonaut space-health program (on-device physiological monitoring)
-          - "Geospatial foundation models: DINOv3-based stitching-artifact detector, ~50% less data-cleaning time (transitioned to production with Airbus)"
-          - Embedded edge deployment on NVIDIA Jetson (CUDA, Docker, ROS2)
-
-      - company: European Knowledge Centre (EKC)
-        position: Industrial Supervisor — M.Sc. Theses in Robotics
-        location: Budapest, Hungary
-        start_date: "2026-01"
-        end_date: present
-        highlights:
-          - Visual scene understanding & localization — bridging VLM semantics with metric localization for mobile robots
-          - Kinematic path planning and control for mobile bases in cluttered, dynamic environments
+          - "**Medical AI Team Lead (HUNOR ISS Mission):** led the medical-AI team, in collaboration with Semmelweis University, that developed AI-assisted diagnostic and health-monitoring tools for the HUNOR programme that flew a Hungarian astronaut to the ISS — an activity and fitness tracker, a cuffless blood-pressure estimator, and a denoising filter for the Astroskin biometric sensor suit, all trained and validated on noisy real-world wearable sensor data"
+          - "**ViroFighter Debugging & System Testing (ROS 1):** owned debugging and system-level testing of the ViroFighter autonomous UGV on its ROS 1 Melodic stack — reproducing field failures and isolating faults across sensor drivers, timing and network layers, localization, and geometric/calibration logic to determine whether a bug lived in the hardware, the data, or the math"
+          - "**Computer-Vision Quality Assurance (Mylan):** built an automated optical inspection station in C# for a pharmaceutical packaging line, detecting print defects on the backing foil of medicine blister packs at end of line — image acquisition, defect detection and pass/fail decisioning integrated into the production QA workflow"
+          - "**Emerging Perception Technology:** evaluated and shipped a DINOv3 foundation-model anomaly detector to production (adopted by Airbus Geo, 50% less data-cleaning time), assessing accuracy, runtime cost and production readiness against classical baselines"
 
       - company: European Knowledge Centre (EKC)
         position: Intern — Robotic Perception & Localization
@@ -66,27 +97,110 @@ cv:
         start_date: "2025-02"
         end_date: "2025-06"
         highlights:
-          - Prototyped multi-camera visual odometry (4 fisheye cameras, SuperPoint, GTSAM)
-          - Trained an SVM classifier to reject RGB-D reflection artifacts in specular environments
+          - "**Free-Space Estimation & Sensor Noise Rejection:** developed a Support Vector Machine (SVM) classifier to reject reflection artifacts from Intel RealSense depth data, improving free-space and obstacle estimation in perceptually challenging (specular) environments. Supported calibration and time synchronization between the four wide-FOV fisheye cameras and the RGB-D cameras"
+          - Prototyped the multi-camera visual odometry pipeline (four fisheye cameras, SuperPoint deep-learning features, GTSAM graph optimization) that matured into the ViroFighter localization stack, cutting angular drift by 95%
 
       - company: Robert Bosch Power Tools GmbH
-        position: Intern & Bachelor Thesis — Robotic Automation
+        position: Intern & Bachelor Thesis Student — Robotic Automation
         location: Germany
         start_date: "2022-04"
         end_date: "2023-03"
         highlights:
-          - Built an automated UR16e test bench integrating kinematic control with sensor feedback
-          - Designed a multi-modal sensing system (force-torque, accelerometer, current) for real-time dynamic-force analysis
+          - "**Manipulator Work Cell (UR16e):** designed and built the electromechanical test bench for a UR16e-based robotic drilling system destined for an autonomous drilling AGV — interfacing with the arm's control software to command end-effector poses across the workspace and closing the loop with real-time sensor feedback on physical hardware"
+          - "**Sensing & Low-Level Integration:** developed a redundant force-torque sensing system (F/T sensor, accelerometer, motor current) for real-time characterization of contact forces and torques across drilling poses, including data acquisition, synchronization and analysis of the multi-sensor streams"
 
-    Selected Skills:
-      - label: Perception & SLAM
-        details: "Visual-inertial SLAM, multi-camera, event-camera (DVS), multi-object tracking, sensor fusion (camera, RGB-D, LiDAR, IMU), state estimation"
-      - label: Robotics & Deployment
-        details: "ROS / ROS2, Docker, CI pipelines, embedded GPU compute (NVIDIA Jetson, CUDA), nonlinear optimization (GTSAM)"
-      - label: Programming
-        details: "Python, C++ (≥17), C# (industrial vision), PyTorch, OpenCV, NumPy / SciPy"
-      - label: Research
-        details: "Deep-learning perception, event-camera pipelines, real-time embedded systems, scientific writing"
+    Projects:
+      - name: Aerial Robotics — Vision-Based State Estimation
+        date: "2024"
+        highlights:
+          - Deployed ORB-SLAM2 for robust, purely vision-based state estimation and localization on a Tello UAV in GPS-denied environments
+
+      - name: Multi-Object Tracking using Kalman Filter on Event-Based Data
+        date: "2023"
+        highlights:
+          - Implemented a high-frequency Kalman Filter for trajectory and velocity estimation from asynchronous Dynamic Vision Sensor (DVS) streams, engineering the data pipeline around continuous, microsecond-resolution events rather than synchronous frames for low-latency tracking
+
+      - name: Autonomous Navigation onboard a TurtleBot 3
+        date: "2023"
+        highlights:
+          - Feature-based Graph SLAM localization using ArUco marker landmarks and the GTSAM library
+          - Behavior-tree exploration with frontier-based RRT* planning under kinematic constraints, pure-pursuit PID path tracking, and a task-priority forward-kinematics manipulator controller for object intervention
+
+      - name: FIRST Robotics Competition (FRC)
+        start_date: "2017"
+        end_date: "2023"
+        highlights:
+          - Founder, former captain and mentor of the Prepa Tec Daedalus 7102 team; robot inspector certifying 50 industrial-category robots against FRC event regulations
+
+    Publications:
+      - title: Robust Multi-Camera Visual Odometry in Specular Indoor Environments Using Deep Learning
+        publisher: Proc. IntRob26, 2026 — accepted for publication
+        date: "2026"
+        summary: R. Tommasi Hernández, Dr. G. Vasilevic and Prof. Z. Istenes
+
+      - title: "Predicting Hemodynamic Shifts in Microgravity: A Deep Learning Approach to Cuffless Blood Pressure Estimation"
+        publisher: Proc. IAC2026, 2026 — accepted for publication
+        date: "2026"
+        summary: R. Tommasi Hernández, Dr. G. Bohus, Dr. J. Nagy-Bozsoky, P. Cordero, Z. Horvath, Dr. K.V. Nagy and Prof. B. Merkely
+
+    Skills:
+      - name: Perception & Computer Vision
+        keywords:
+          - SLAM & Visual Odometry (multi-camera, factor-graph optimization)
+          - Localization & State Estimation
+          - Multi-Sensor Fusion
+          - Monocular / Fisheye / RGB-D Depth Cameras
+          - Point-Cloud & Depth-Image Processing
+          - Free-Space & Obstacle Estimation
+          - Object Detection & Tracking
+          - Automated Optical Inspection
+          - Deep-Learning Features (SuperPoint) & Vision Foundation Models (DINOv3)
+          - Kalman Filtering
+
+      - name: 3D Geometry & Robotics
+        keywords:
+          - Rigid-Body Transforms (SO(3)/SE(3))
+          - Rotations & Quaternions
+          - Coordinate Frames & Transform Trees (TF2)
+          - Camera Intrinsics/Extrinsics & Hand-Eye Calibration
+          - Motion Planning & Obstacle Avoidance (Nav2)
+          - Probabilistic Robotics
+
+      - name: Programming & Libraries
+        keywords:
+          - Modern C++ (14/17)
+          - Python
+          - ROS 2 (incl. ROS 1 → ROS 2 migration)
+          - Linux
+          - OpenCV
+          - PCL / Open3D
+          - Eigen
+          - GTSAM
+          - NumPy / SciPy
+          - PyTorch
+          - TensorRT
+          - CUDA
+
+      - name: Systems, Tooling & Hardware
+        keywords:
+          - Sensor Bringup, Calibration & Time Synchronization
+          - Embedded / Edge Deployment & Optimization (NVIDIA Jetson, Isaac ROS)
+          - Simulation-First Validation (Isaac Sim)
+          - Large-Scale ROS-Bag Field-Data Collection & Replay
+          - Logging, Metrics & Evaluation Tooling
+          - 3D Data Visualization (Foxglove, RViz, Open3D)
+          - AI-Assisted Development & Agents (implementation, debugging, code review)
+          - Real-Time Systems
+          - Docker
+          - Git
+          - CI/CD
+
+      - name: Soft Skills
+        keywords:
+          - Cross-Functional Collaboration (Perception / Controls / Embedded / Hardware / Systems)
+          - End-to-End Ownership
+          - Field Testing & Debugging on Physical Robots
+          - Team Leadership & Mentoring
 
     Languages:
       - name: Spanish
@@ -95,5 +209,3 @@ cv:
         summary: C1 (TOEFL iBT)
       - name: German
         summary: C1 (Goethe-Institut)
-      - name: Hungarian
-        summary: Learning

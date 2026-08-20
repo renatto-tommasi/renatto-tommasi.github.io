@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI &amp; Robotics Engineer · <a href='https://euroknows.com/'>European Knowledge Centre</a>, Budapest
+subtitle: Full Stack Robotics Engineer · <a href='https://euroknows.com/'>European Knowledge Centre</a>, Budapest
 
 profile:
   align: right
@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an **AI &amp; Robotics Engineer** working at the intersection of perception and autonomy. My focus is **visual-inertial SLAM**, **multi-sensor perception**, and **sensor fusion**, with hands-on experience taking systems from research to **embedded edge deployment** on platforms like the NVIDIA Jetson. I build primarily on **ROS / ROS2**.
+I'm a **Full Stack Robotics Engineer** working at the intersection of perception and autonomy. My focus is **visual-inertial SLAM**, **multi-sensor perception**, and **sensor fusion**, with hands-on experience taking systems from research to **embedded edge deployment** on platforms like the NVIDIA Jetson. I build primarily on **ROS / ROS2**.
 
 I hold an M.Sc. in **Intelligent Field Robotics** ([Erasmus Mundus](https://en.wikipedia.org/wiki/Erasmus_Mundus), Universitat de Girona / University of Zagreb). A good part of my work has been in **space systems** — including ESA projects, ISS-payload work, and the HUNOR program — where reliability and tight resource budgets shape every design decision. I currently act as **Systems Engineer** on an **ESA ISS-payload project (Phase B)**, and I worked as an **AI researcher** on the **HUNOR** space-health program.
 
