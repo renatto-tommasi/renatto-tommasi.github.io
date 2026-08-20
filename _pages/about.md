@@ -26,11 +26,17 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a **Full Stack Robotics Engineer** working at the intersection of perception and autonomy. My focus is **visual-inertial SLAM**, **multi-sensor perception**, and **sensor fusion**, with hands-on experience taking systems from research to **embedded edge deployment** on platforms like the NVIDIA Jetson. I build primarily on **ROS / ROS2**.
+I'm a **Full Stack Robotics Engineer** at the [European Knowledge Centre](https://euroknows.com/) in Budapest. My work keeps landing in strange places: a **point-of-care blood analyser** being qualified to fly on the **International Space Station**, and an **autonomous disinfection robot** finding its own way down **hospital corridors**.
 
-I hold an M.Sc. in **Intelligent Field Robotics** ([Erasmus Mundus](https://en.wikipedia.org/wiki/Erasmus_Mundus), Universitat de Girona / University of Zagreb). A good part of my work has been in **space systems** — including ESA projects, ISS-payload work, and the HUNOR program — where reliability and tight resource budgets shape every design decision. I currently act as **Systems Engineer** on an **ESA ISS-payload project (Phase B)**, and I worked as an **AI researcher** on the **HUNOR** space-health program.
+Those two have almost nothing in common on paper. In practice they demand the same thing — a machine that has to work unattended, in an environment that will not cooperate, where nobody is coming to reset it. Chasing that problem across as many domains as will have me is more or less my whole approach to robotics: I'd rather understand the full stack, from the sensor driver up to the mission requirement, than own one clean layer of it.
 
-Right now I'm working toward **end-to-end Vision-Language-Action (VLA)** architectures for **mobile robots** — scene understanding and semantic mapping — and I supervise M.Sc. theses feeding into that effort. I care about systems that are not just accurate in a paper but robust on real hardware.
+Day to day I own the **perception and localization stack** of an autonomous ground vehicle in **C++17, Python and ROS 2** — sensor bringup and intrinsic/extrinsic calibration, **multi-camera visual odometry and SLAM**, depth and point-cloud processing, free-space and obstacle estimation, and **multi-sensor fusion through factor-graph optimization on SE(3)** ([GTSAM](https://gtsam.org/)), squeezed onto **NVIDIA Jetson** edge hardware. Fusing four fisheye cameras with RGB-D and wheel odometry cut our angular drift by **95%**. I'm most useful in the unglamorous part: bisecting a stack across drivers, timing, networking and geometry to find where reality and the math disagree — then building the **Isaac Sim** twins, ROS-bag replay and Foxglove tooling that prove the fix holds in the field.
+
+On the space side I'm **Payload Systems Engineer** for the prime contractor on that **ESA ISS payload**, leading the consortium's engineering effort with **Airbus Defence and Space** under ECSS toward Preliminary Design Review. Before that I led the **medical-AI team** for **HUNOR**, the programme that flew a Hungarian astronaut to the ISS, building a cuffless blood-pressure estimator and a denoising filter for the Astroskin biometric suit out of genuinely noisy wearable data.
+
+I hold an M.Sc. in **Intelligent Field Robotics Systems** ([IFRoS](https://ifrosmaster.org/)) — an **Erasmus Mundus** joint master's split between the Universitat de Girona and the University of Zagreb — and before that a mechatronics degree spanning Monterrey and Mannheim, which is where the habit of reaching for a soldering iron before a debugger comes from.
+
+Right now I'm working toward end-to-end **Vision-Language-Action** architectures for mobile robots, supervising two industrial M.Sc. theses that are merging into one: vision-language models for semantic localization, and behaviour cloning with actor–critic refinement in Nav2. I care about systems that aren't just accurate in a paper but robust on real hardware.
 
 Outside the lab I'm a triathlete; the training discipline tends to leak into how I approach engineering.
 
