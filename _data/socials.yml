@@ -7,3 +7,5 @@ github_username: renatto-tommasi # your GitHub username
 linkedin_username: rtommasi # your LinkedIn handle (the part after /in/)
 orcid_id: 0009-0003-4960-4542 # your ORCID iD
 rss_icon: true # comment this line to hide the RSS icon
+# Google Scholar is unconfigured; do not use a template or guessed ID.
+# After profile verification, set scholar_userid and follow docs/SCHOLAR_CITATIONS.md.
